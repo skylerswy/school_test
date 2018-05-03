@@ -9,8 +9,224 @@
     <link rel="stylesheet" href="css/file.css" >
 </head>
 <body>
-    
+    <div class="nav_head">
+        <input type="button" class="btn btn-link" data-toggle="modal" data-target="#logoin" name="logoin" value="登陆">
+        <input type="button" class="btn btn-link" data-toggle="modal" data-target="#register" name="register" value="注册" >
+        <div class="nav dropdown">
+            <button type="button" class="btn btn-link dropdown-toggle" id="dropdown_contact" data-toggle="dropdown">联系客服
+                <span class="caret"></span>
+            </button>
+            <!-- class="dropdown-toggle"的作用是按钮右侧的圆角。去掉dropdown-toggle，你会发现UL的右侧变成了直角. -->
+            <ul class="dropdown-menu" role="menu" aria-labelledby="dropdown_contact">
+                <!-- class="dropdown-menu" 创建下拉菜单 -->
+                <li role="presentation">
+                    <a role="menuitem" tabindex="-1" href="#">消费者客服</a>
+                </li>
+                <!-- tabIndex属性可以设置键盘中的TAB键在控件中的移动顺序,即焦点的顺序。   -->
+                <li role="presentation">
+                    <a role="menuitem" tabindex="-1" href="#">卖家客服</a>
+                </li>
+            </ul>
+        </div>
+        <div class="nav dropdown">
+            <button type="button" class="btn btn-link dropdown-toggle" id="dropdown_center" data-toggle="dropdown">| 卖家中心
+                <span class="caret"></span>
+            </button>
+                <ul class="dropdown-menu" role="menu" aria-labelledby="dropdown_contact">
+                <li role="presentation">
+                    <a role="menuitem" tabindex="-1" href="#">已卖出的宝贝</a>
+                </li>
+                <li role="presentation">
+                    <a role="menuitem" tabindex="-1" href="#">出售中的宝贝</a>
+                </li>
+                <li role="presentation" class="divider"></li>
+                <li role="presentation">
+                    <a role="menuitem" tabindex="-1" href="#">我的消息</a>
+                </li>
+            </ul>
+        </div>
+        <div class="nav dropdown">
+            <button type="button" class="btn btn-link dropdown-toggle" id="dropdown_collection" data-toggle="dropdown">
+                <span class="glyphicon glyphicon-heart-empty"></span> 收藏<span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu" role="menu" aria-labelledby="dropdown_contact">
+                <li role="presentation">
+                    <a role="menuitem" tabindex="-1" href="#">收藏的宝贝</a>
+                </li>
+                <li role="presentation">
+                    <a role="menuitem" tabindex="-1" href="#">收藏的店铺</a>
+                </li>
+            </ul>
+        </div>
+        <div class="nav">
+            <button type="button" class="btn btn-link" id="dropdown_cart">
+                <span class="glyphicon glyphicon-shopping-cart"></span> 购物车
+            </button>
+        </div>
+        <div class="nav">
+            <button type="button" class="btn btn-link" id="dropdown_home_page">
+               首页
+            </button>
+        </div>
+    </div>
+    <div class="title">
+        <img src="img/title.png">
+    </div>
+    <!-- 物品导航栏和图片轮播 -->
+    <div class="nav_and_img">
+        <div class="nav_main">
+            <ul class="list-group">
+                <li class="list-group-item">
+                    <img src="img/书籍.png">
+                    <a href="#">闲置书籍</a>
+                    <span>
+                        <a href="#">高数</a>
+                        <a href="#">计算机</a>
+                        <a href="#">英语</a>
+                    </span>
+                </li>
+                <li class="list-group-item">
+                    <img src="img/双色数码.png">
+                    <a href="#">数码电子</a>
+                    <span>
+                        <a href="#">手机</a>
+                        <a href="#">相机</a>
+                        <a href="#">笔记本</a>
+                    </span>
+                </li>
+                <li class="list-group-item">
+                    <img src="img/衣服.png">
+                    <a href="#">鞋服佩饰</a>
+                    <span>
+                        <a href="#">衣服</a>
+                        <a href="#">裤子</a>
+                        <a href="#">鞋子</a>
+                    </span>
+                </li>
+                <li class="list-group-item">
+                    <img src="img/日用.png">
+                    <a href="#">日用物品</a>
+                    <span>
+                        <a href="#">台灯</a>
+                        <a href="#">蚊帐</a>
+                        <a href="#">衣架</a>
+                    </span>
+                </li>
+                <li class="list-group-item">
+                    <img src="img/自行车.png">
+                    <a href="#">出行交通</a>
+                    <span>
+                        <a href="#">自行车</a>
+                        <a href="#">电动车</a>
+                        <a href="#">滑板</a>
+                    </span>
+                </li>
+                <li class="list-group-item">
+                    <img src="img/其他.png">
+                    <a href="#">其他闲置</a>
+                    <span>
+                        <a href="#">模型材料</a>
+                        <a href="#">颜料</a>
+                        <a href="#">模具</a>
+                    </span>
+                </li>
+            </ul>
+        </div>
+        <!-- 图片轮播 -->
+        <div class="img_carousel">
+            <div id="myCarousel" class="carousel slide ">
+                <!-- 轮播（Carousel）指标
+                    slide滑动样式 -->
+                <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                </ol>   
+                <!-- 使用 data-slide-to 来向轮播传递一个原始滑动索引，
+                    data-slide-to="2" 将把滑块移动到一个特定的索引，索引从 0 开始计数。 -->
+                <!-- 轮播（Carousel）项目 -->
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <img src="img/轮播图片1.jpg" alt="First slide">
+                    </div>
+                    <div class="item">
+                        <img src="img/轮播图片2.jpg" alt="Second slide">
+                    </div>
+                    <div class="item">
+                        <img src="img/轮播图片3.jpg" alt="Third slide">
+                    </div>
+                </div>
+                <!-- 轮播（Carousel）导航 -->
+                <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+                <!-- 属性 data-slide 接受关键字 prev 或 next，用来改变幻灯片相对于当前位置的位置。 -->
+            </div>
+        </div>
+    </div>
 
+    <!-- 登录modal开始 -->
+    <div class="modal fade" id="logoin" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title" id="myModallogoin">登录</h4>
+                </div>
+                <div class="modal-body text-center">
+                    <input type="text" required="required" placeholder="账号" name="login_email" id="login_email" class="user"/>         
+                    <input type="password" required="required" placeholder="密码" name="login_password" id="login_password" class="password"/>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" id="login_modal_register_btn">注册</button>
+                    <input type="button" class="btn btn-default" id="login_btn" value="登录 "/>  
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 登录modal结束 -->
+
+    <!-- 注册modal开始 -->
+    <div class="modal fade" id="register" tabindex="-1" role="dialog"  aria-hidden="true">
+        <!-- tabIndex属性可以设置键盘中的TAB键在控件中的移动顺序，
+            即焦点的顺序，若把tabIndex属性设为一个负值（如tabIndex="-1"），
+            那么这个链接将被排除在TAB键的序列之外。 -->
+        <!-- 为 .modal 添加 role="dialog"，用于指定模态框为对话框。
+            通过 aria-describedby 属性为模态框 .modal 添加描述性信息。
+            为 .modal-dialog 添加 aria-hidden="true" 属性。隐藏要弹出的内容 -->
+        <div class="modal-dialog"><!-- /.modal 设置宽度大小-->
+            <div class="modal-content"><!-- /.modal-content设置样式 -->
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title" id="myModalLabel">注册</h4>
+                </div>
+                <div class="modal-body text-center">
+                    <input type="text" required="required" placeholder="账号" name="register_email" class="user" id="register_email" />
+                    <!-- required 属性规定必需在提交之前填写输入字段。-->
+                    <div id="errorAccount"></div>
+                    <input type="password" required="required" placeholder="密码" name="register_password"  class="password" id="register_password"/>
+                    <small class="form-text text-muted">大小写字母和数字组成，6 - 20 位</small>
+                    <input type="password" required="required" placeholder="确认密码" name="register_password2"  class="password" id="register_password2"/>
+                    <div>
+                    <input type="text" required="required" placeholder="验证码" name="verify_code" class="vcode" id="verify_code"/>
+                    <input type="button" class="btn btn-default" id="get_verify_code_btn" value="发送验证码" />
+                    </div>
+                </div>
+                <div id="error_box" style="text-align: center;"><br></div>
+                <div class="modal-footer">
+                    <input type="button" class="btn btn-default" id="register_modal_login_btn" value="登录">
+                    <input type="button" class="btn btn-default" id="register_btn" value="注册 "/>
+                    <!-- data-dismiss="modal" 点击会关闭-->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 注册modal结束 -->    
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/file.js"></script>
