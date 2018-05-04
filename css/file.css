@@ -20,14 +20,40 @@
 
 /* ------------------------title------------------- */
 .title {
-    width: 100%;
+    width: 1600px;
     height: 100px;
     background-color: #FFDA44;
+    overflow: hidden;
 }
 
 .title img {
     margin-top: 10px;
     margin-left: 8%;
+}
+
+.title a {
+    display: inline-block;
+    color: #000;
+    line-height: 35px;
+    font-family: Arial,Helvetica,sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    margin: 4px 20px;
+    text-decoration: none;
+}
+
+.title a.active {
+    border-bottom: 4px solid #000;
+}
+
+.second_title {
+    float: right;
+    width: 1000px;
+    height: 100px;
+    overflow: hidden;
+    margin-top: 30px;
+    position: relative;
+    left: -50px;
 }
 
 /* --------------------主要物品导航----------------- */
@@ -63,16 +89,84 @@
     color: #9dc91c;
 }
 
+
+/* ------------二级导航------------ */
+.second_nav ul {
+    list-style: none;
+}
+
+.second_nav a {
+    float: left;
+    color: #979797;
+    font-size: 12px;
+    margin: 3px;
+}
+
+.second_nav dt {
+    border-left: 4px solid #FFDA44;
+    padding-left: 10px;
+    margin-bottom: 10px;
+}
+
+.second_nav {
+    display: none;
+}
+
+.nav_main ul li:hover > second_nav {
+    display: block;
+}
+
+
 /* ------------图片混动------------ */
 .img_carousel {
     float: left;
     width: 600px;
     height: 180px;
-    margin: 15px 40px;
+    margin: 35px 20px;
     
 }
 
+/* --------------Personal Center------------ */
+.personal_center {
+    width: 250px;
+    height: 280px;
+    float: left;
+    margin: 15px 0;
+    border-radius: 5px;
+    border: 1px solid #e4ecf3;
+    box-shadow: 1px 2px 3px #f2f6f8;
+}
 
+.personal_center img {
+    width: 70px;
+    height: 70px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
 
+.personal_center p {
+    display: inline-block;
+    font-size: 14px;
+    font-style: initial;
+    color: #3273dc;
+    position: relative;
+    left: 30px;
+    top: 10px;
+}
+
+/* -------------------sell------------------ */
+.sell_one {
+    width: 100%;
+}
+
+.sell_one>p {
+    font-weight: bold;
+    font-size: 36px;
+    color: #504A4D;
+}
+
+.sell_one span {
+    color: #504A4D;
+}
 
 
