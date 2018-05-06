@@ -49,8 +49,8 @@ $(document).ready(function(){
     }
 
     play();
-    // container.onmouseover = stop;
-    // container.onmouseout = play;
+    container.onmouseover = stop;
+    container.onmouseout = play;
     next.onclick = function() {
         animate(-397);
     }
