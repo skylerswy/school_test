@@ -5,6 +5,10 @@ $(document).ready(function(){
     var next = document.getElementById("rightmove");
 
     function animate(offset) {
+        if (offset == 0) {
+            return;
+        }
+        animated = true;
         var newleft = parseInt(pic_list.style.left) + offset;
         var time = 800;
         var inteval = 10;
@@ -23,6 +27,7 @@ $(document).ready(function(){
                 if(parseInt(pic_list.style.left) < -1588) {
                     pic_list.style.left = 0 + 'px';
                 }
+                animated = false;
             }
             
         }
