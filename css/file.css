@@ -187,8 +187,9 @@
 
 /* -------------------sell------------------ */
 .sell_one {
-    width: 100%;
+    width: 1550px;
     height: 70px;
+    margin-bottom: 20px;
 }
 
 .sell_one>p {
@@ -201,21 +202,22 @@
     color: #504A4D;
 }
 
-.slide_second {
+.slide_container {
     width: 100%;
-    height: 300px;
+    height: 350px;
 }
 
-.slide_second li {
-    list-style: none;
-    /* cursor: pointer;   */
+.slide_second {
+    width: 1350px;
+    height: 300px;
+    overflow: hidden;
+    position: relative;
 }
 
 .slide_pic {
-    width: 1600px;
+    width: 2800px;
     height: 215px;
-    overflow: hidden;
-    margin-left: 7%;
+    margin-left: 11%;
 }
 
 .slide_pic img {
@@ -227,7 +229,7 @@
 
 .left_ico {
     position: relative;
-    top: 130px;
+    top: -210px;
     left: 50px;
     width: 50px;
     height:　50px;
@@ -235,8 +237,8 @@
 
 .right_ico {    
     position: relative;
-    top: -135px;
-    left: 1380px;
+    top: -210px;
+    left: 1340px;
     width: 50px;
     height:　50px;
 
