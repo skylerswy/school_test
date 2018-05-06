@@ -3,6 +3,7 @@ $(document).ready(function(){
     var pic_list = document.getElementById("slide_pic");
     var prev = document.getElementById("leftmove");
     var next = document.getElementById("rightmove");
+    var animated = false;
 
     function animate(offset) {
         if (offset == 0) {
