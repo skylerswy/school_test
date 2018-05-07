@@ -58,4 +58,28 @@ $(document).ready(function(){
     prev.onclick = function() {
         animate(397);
     }
+
+    // --------------------tab开始--------------------
+    var tab_li = document.getElementsByClassName("tab_li");
+    var tab_div = document.getElementsByClassName("tab_div");
+
+    for(var i=0;i<tab_li.length;i++) {
+        tab_li[i].index = i;
+        //console.log(i);
+        tab_li[i].onclick = function() {
+            //console.log("45646");
+            for(var j=0;j<tab_li.length;j++) {
+                tab_li[j].className = "off tab_li";
+                // console.log(j);
+                // console.log(tab_li[j].className);
+                tab_div[j].className = "hide tab_div";
+            }
+            this.className = "on tab_li";
+            tab_div[this.index].className = "show tab_div";
+        }
+    }
+
+// --------------------tab结束--------------------
+
+
 });

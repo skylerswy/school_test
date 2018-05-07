@@ -209,7 +209,7 @@
 
 .slide_second {
     width: 1200px;
-    height: 300px;
+    height: 250px;
     overflow: hidden;
     position: relative;
     margin-left: 10%;
@@ -234,6 +234,7 @@
     left: 60px;
     width: 50px;
     height:　50px;
+    cursor:pointer;
 }
 
 .right_ico {    
@@ -242,6 +243,146 @@
     left: 1400px;
     width: 50px;
     height:　50px;
-
+    cursor:pointer;
 }
 
+
+/* ---------------------tab---------------------- */
+.tab {
+    margin: 0 10%;
+    overflow: hidden;
+}
+
+.tab li {
+    float: left;
+    list-style: none;
+    height: 28px;
+    line-height: 28px;
+    font-family: "Microsoft Yahei";
+    font-size: 16px;
+    padding: 0 13px;
+    margin-right: 5px;
+}
+
+.tab li.on {    
+    margin-bottom: -1px;
+    color: #fc0;
+    border-bottom: 3px solid #fc0;
+}
+
+.tab_content {
+    width: 1200px;
+    height: 300px;
+    padding: 20px;
+    margin: 26px;
+    border-top: 2px solid #e4ecf3;
+}
+
+.tab_content .hide {
+    display: none;
+}
+
+.tab_content .show {
+    display: block;
+}
+
+/* ----------------main_content--------------- */
+.main_content {
+    margin: 0 10%;
+}
+
+.second_content_left {
+    width: 1200px;
+    height: 300px;
+}
+
+.second_content_left img {
+    width: 50px;
+    height: 50px;
+}
+
+.second_content_left a {
+    display: inline-block;
+    position: relative;
+    top: 8px;
+    font-family: "Microsoft Yahei";
+    font-size: 20px;
+    color: #504A4D;
+}
+
+.third_content {
+    border-top: 2px solid #e4ecf3;
+    height: 235px;
+    width: 1200px;
+    /* background-color: #9dc91c; */
+}
+
+.second_content_right {
+    width: 1200px;
+    height: 300px;
+}
+
+.second_content_right img {
+    width: 50px;
+    height: 50px;
+    position: relative;
+    left: 1150px;
+}
+
+.second_content_right a {
+    display: inline-block;
+    position: relative;
+    top: 8px;
+    font-family: "Microsoft Yahei";
+    font-size: 20px;
+    position: relative;
+    left: 1010px;
+    color: #504A4D;
+}
+
+/* ---------------foot--------------- */
+.foot {
+    width: 1600px;
+    height: 200px;
+    background-color: #fc0;
+    margin-bottom: 40px;
+}
+
+.foot img {
+    margin-left: 12%;
+}
+
+.foot p {
+    font-family: "Microsoft Yahei";
+    font-size: 28px;
+    position: relative;
+    left: 480px;
+    top: -140px;
+    color: #504A4D;
+    font-weight: 700;
+}
+
+.foot span {
+    font-family: "Microsoft Yahei";
+    font-size: 18px;
+    position: relative;
+    left: 480px;
+    top: -140px;
+    color: #504A4D;
+}
+
+.ios {
+    position: relative;
+    top: -200px;
+    left: 520px;
+}
+
+.android {
+    position: relative;
+    top: -120px;
+    left: 125px;
+}
+
+address {
+    margin-left: 70%;
+}
