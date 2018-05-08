@@ -37,13 +37,18 @@ $(document).ready(function(){
     }
 
     var timer;
+    // function play() {
+    //     timer = setInterval(function(){
+    //         next.onclick();
+    //     },3000);
+    // }
     function play() {
-        timer = setInterval(function(){
-            next.onclick();
-        },3000);
+        timer = setTimeout(function(){  
+            next.onclick(); 
+            setTimeout(play,3000);
+        },3000);  
     }
 
-   
     function stop() {
         clearInterval(timer);
     }
@@ -51,6 +56,7 @@ $(document).ready(function(){
     play();
     container.onmouseover = stop;
     container.onmouseout = play;
+
     next.onclick = function() {
         animate(-397);
     }
@@ -80,6 +86,5 @@ $(document).ready(function(){
     }
 
 // --------------------tab结束--------------------
-
 
 });
