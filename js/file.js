@@ -33,7 +33,6 @@ $(document).ready(function(){
             
         }
         go();
-
     }
 
     var timer;
@@ -43,14 +42,14 @@ $(document).ready(function(){
     //     },3000);
     // }
     function play() {
-        timer = setTimeout(function(){  
-            next.onclick(); 
-            setTimeout(play,3000);
-        },3000);  
+        timer = setTimeout(function () {
+            next.onclick();
+            play();
+        }, 3000);
     }
 
     function stop() {
-        clearInterval(timer);
+        clearTimeout(timer);
     }
 
     play();
