@@ -286,6 +286,68 @@
     display: block;
 }
 
+.foodie {
+    width: 200px;
+    height: 270px;
+    border: 2px solid #e4ecf3;
+    box-shadow: 1px 2px 3px #f2f6f8;
+    border-radius: 5px;
+    float: left;
+}
+
+.foodie img {
+    width: 160px;
+    height: 230px;
+    margin-top: 15px;
+    margin-left: 15px;
+}
+
+.describe {
+    width: 180px;
+    height: 270px;
+    
+    float: left;
+}
+
+.describe img {
+    width: 25px;
+    height: 25px;
+    margin: 5px;
+}
+
+.describe a {
+    font-family: "Microsoft Yahei";
+    font-size: 16px;
+    color: #504A4D;
+    cursor:pointer;
+    display: block;
+    margin-left: 15px;
+}
+
+.describe .rmb {
+    margin-left: 80px;
+}
+
+.describe span {
+    color: #fc0;
+    font-weight: 900;
+}
+
+.describe p {
+    text-indent: 30px;
+    margin: 15px;
+    overflow:hidden; 
+    /* 超出的文本隐藏 */
+    text-overflow:ellipsis;
+    /* 溢出用省略号显示 */
+    display:-webkit-box; 
+    /* 将对象作为弹性伸缩盒子模型显示。 */
+    -webkit-box-orient:vertical;
+    /* 从上到下垂直排列子元素 */
+    -webkit-line-clamp:7;
+    /* 表示显示的行数。 */
+}
+
 /* ----------------main_content--------------- */
 .main_content {
     margin: 0 10%;
