@@ -305,7 +305,6 @@
 .describe {
     width: 180px;
     height: 270px;
-    
     float: left;
 }
 
@@ -322,6 +321,7 @@
     cursor:pointer;
     display: block;
     margin-left: 15px;
+    font-weight: 550;
 }
 
 .describe .rmb {
@@ -355,7 +355,8 @@
 
 .second_content_left {
     width: 1200px;
-    height: 300px;
+    height: 400px;
+    overflow: hidden;
 }
 
 .second_content_left img {
@@ -376,12 +377,15 @@
     border-top: 2px solid #e4ecf3;
     height: 235px;
     width: 1200px;
+    padding: 20px;
+    margin-left: 26px;
     /* background-color: #9dc91c; */
 }
 
 .second_content_right {
     width: 1200px;
-    height: 300px;
+    height: 400px;
+    /* overflow: hidden; */
 }
 
 .second_content_right img {
@@ -401,6 +405,135 @@
     left: 1010px;
     color: #504A4D;
 }
+
+.main_content .goods {
+    width: 200px;
+    height: 270px;
+    border: 2px solid #e4ecf3;
+    box-shadow: 1px 2px 3px #f2f6f8;
+    border-radius: 5px;
+    float: left;
+}
+
+.main_content .goods img {
+    width: 160px;
+    height: 230px;
+    margin-top: 15px;
+    margin-left: 15px;
+}
+
+.main_content .describe img {
+    width: 25px;
+    height: 25px;
+    margin: 5px;
+}
+
+.main_content .describe a {
+    font-family: "Microsoft Yahei";
+    font-size: 16px;
+    color: #504A4D;
+    cursor:pointer;
+    display: block;
+    font-weight: 550;
+    margin-left: 15px;
+}
+
+.main_content .describe .rmb {
+    margin-left: 80px;
+    margin-top: 20px;
+}
+
+.main_content .describe span {
+    color: #fc0;
+    font-weight: 900; 
+    position: relative;
+    top: 11px;
+}
+.second_content_right .goods {
+    float: left;
+}
+
+.second_content_right .goods img {
+    position: relative;
+    left: 0;
+}
+
+.second_content_right .describe img {
+    position: relative;
+    left: 0;
+}
+
+.second_content_right .describe a {
+    position: relative;
+    left: 0;
+}
+
+
+/* ---------------------------- */
+/* 
+.second_content_right .describe img {
+    width: 25px;
+    height: 25px;
+    margin: 5px;
+    float: none;
+}
+
+.second_content_right .describe {
+    width: 180px;
+    height: 270px;
+    float: left;
+}
+
+.second_content_right .describe a {
+    font-family: "Microsoft Yahei";
+    font-size: 16px;
+    color: #504A4D;
+    cursor:pointer;
+    display: block;
+    font-weight: 550;
+    margin-left: 15px;
+    position: relative;
+    left: 50px;
+}
+
+.second_content_right .goods img {
+    width: 160px;
+    height: 230px;
+    margin-top: 15px;
+    margin-left: 15px;
+    position: relative;
+    left: 0;
+}
+
+.second_content_right .describe .rmb {
+    
+    margin-top: 20px;
+    position: relative;
+    left: 0;
+} 
+
+.second_content_right .describe span {
+    color: #fc0;
+    font-weight: 900; 
+    position: relative;
+    top: 11px;
+}
+
+.second_content_right .describe img {
+    position: relative;
+    left: 140px;
+}
+
+
+.second_content_right .goods {
+    width: 200px;
+    height: 270px;
+    border: 2px solid #e4ecf3;
+    box-shadow: 1px 2px 3px #f2f6f8;
+    border-radius: 5px;
+    float: left;
+} */
+
 
 /* ---------------foot--------------- */
 .foot {
