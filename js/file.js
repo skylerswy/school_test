@@ -86,4 +86,22 @@ $(document).ready(function(){
 
 // --------------------tab结束--------------------
 
+// -----------------find----------------
+
+$("#search-button").click(function() {
+    var val = $("#search").val(); // 获取搜索词
+    if (val.length > 0) {
+        console.log(val);
+        $(".nav-1").hide(); 
+        $(".nav-1:contains(" + val + ")").show(); 
+    } else {
+        alert("输入为空");
+    }
+});
+
+
+
+
+
+
 });

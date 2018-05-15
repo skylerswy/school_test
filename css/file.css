@@ -185,6 +185,25 @@
     margin: 13px;
 }
 
+/* ---------------------find--------------------- */
+.find {
+    margin: 0 auto;
+    width: 540px;
+    height: 80px;
+}
+
+.find input {
+    width: 400px;
+    margin: 0 auto;
+    margin-left: 30px;
+    display: inline-block;
+}
+
+.find button {
+    display: inline-block;
+    width: 100px;
+}
+
 /* -------------------sell------------------ */
 .sell_one {
     width: 1550px;
@@ -230,7 +249,7 @@
 
 .left_ico {
     position: absolute;
-    top: 620px;
+    top: 720px;
     left: 60px;
     width: 50px;
     height:　50px;
@@ -239,7 +258,7 @@
 
 .right_ico {    
     position: absolute;
-    top: 620px;
+    top: 720px;
     left: 1400px;
     width: 50px;
     height:　50px;

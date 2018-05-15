@@ -72,7 +72,7 @@
     <div class="title">
         <img src="img/title.png">
         <div class="second_title">
-            <a href="#" class="active">首页</a>
+            <a href="index.html" class="active">首页</a>
             <a href="#" >最新二手</a>
             <a href="#" >拍卖市场</a>
             <a href="#" >免费估价</a>
@@ -447,6 +447,11 @@
         <a href="#"><img src="img/index-回到最上.png"></a>
     </div>
     <!-- 返回最上结束 -->
+    <div class="find">
+        <input type="text" class="form-control" id="search" >
+        <button type="button" class="btn btn-warning" id="search-button">搜索</button>
+    </div>
+    
     <div class="sell_one"> 
         <p class="text-center">今日推荐</p>
         <span class="text-center"><P>热门点击二货，不要错过！</P></span>
@@ -617,7 +622,7 @@
     </div>
 
     <div class="main_content">
-        <div class="second_content_left" id="f1">
+        <div class="second_content_left nav-1" id="f1">
             <img src="img/书籍.png">
             <a href="#">闲置书籍</a>
             <div class="third_content">              
@@ -672,7 +677,7 @@
                 </div>
             </div>
         </div>
-        <div class="second_content_right" id="f2">
+        <div class="second_content_right nav-1" id="f2">
             <img src="img/双色数码.png">
             <a href="#">数码电子</a>
             <div class="third_content">
@@ -719,7 +724,7 @@
                 </div>
             </div>
         </div>       
-        <div class="second_content_left" id="f3">
+        <div class="second_content_left nav-1" id="f3">
             <img src="img/衣服.png">
             <a href="#">鞋服佩饰</a>
             <div class="third_content">
@@ -766,7 +771,7 @@
                 </div>
             </div>
         </div>
-        <div class="second_content_right" id="f4">
+        <div class="second_content_right nav-1" id="f4">
             <img src="img/日用.png">
             <a href="#">日用物品</a>
             <div class="third_content">
@@ -810,7 +815,7 @@
                 </div>
             </div>
         </div>
-        <div class="second_content_left" id="f5">
+        <div class="second_content_left nav-1" id="f5">
             <img src="img/自行车.png">
             <a href="#">出行交通</a>
             <div class="third_content">
@@ -857,7 +862,7 @@
                 </div>
             </div>
         </div>
-        <div class="second_content_right" id="f6">
+        <div class="second_content_right nav-1" id="f6">
             <img src="img/其他.png">
             <a href="#">其他闲置</a>
             <div class="third_content">
@@ -916,6 +921,7 @@
                 <div class="modal-body text-center">
                     <input type="text" required="required" placeholder="账号" name="login_email" id="login_email" class="user"/>         
                     <input type="password" required="required" placeholder="密码" name="login_password" id="login_password" class="password"/>
+                    <a style="color:red;">忘记密码？</a>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-default" id="login_modal_register_btn">注册</button>
