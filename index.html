@@ -10,8 +10,8 @@
 </head>
 <body>
     <div class="nav_head">
-        <input type="button" class="btn btn-link" data-toggle="modal" data-target="#logoin" name="logoin" value="登陆">
-        <input type="button" class="btn btn-link" data-toggle="modal" data-target="#register" name="register" value="注册" >
+        <input type="button" class="btn btn-link" data-toggle="modal" data-target="#login_modal" name="logoin" value="登陆">
+        <input type="button" class="btn btn-link" data-toggle="modal" data-target="#register_modal" name="register" value="注册" >
         <div class="nav dropdown">
             <button type="button" class="btn btn-link dropdown-toggle" id="dropdown_contact" data-toggle="dropdown">联系客服
                 <span class="caret"></span>
@@ -911,7 +911,7 @@
             tel：18××××××××69
     </address>
     <!-- 登录modal开始 -->
-    <div class="modal fade" id="logoin" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal fade" id="login_modal" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
@@ -921,7 +921,7 @@
                 <div class="modal-body text-center">
                     <input type="text" required="required" placeholder="账号" name="login_email" id="login_email" class="user"/>         
                     <input type="password" required="required" placeholder="密码" name="login_password" id="login_password" class="password"/>
-                    <a style="color:red;">忘记密码？</a>
+                    <input type="button" class="btn btn-link" data-toggle="modal" data-target="#forget_password" name="forget_password" id="forget_password_btn" value="忘记密码？" style="color:red;"/>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-default" id="login_modal_register_btn">注册</button>
@@ -933,7 +933,7 @@
     <!-- 登录modal结束 -->
 
     <!-- 注册modal开始 -->
-    <div class="modal fade" id="register" tabindex="-1" role="dialog"  aria-hidden="true">
+    <div class="modal fade" id="register_modal" tabindex="-1" role="dialog"  aria-hidden="true">
         <!-- tabIndex属性可以设置键盘中的TAB键在控件中的移动顺序，
             即焦点的顺序，若把tabIndex属性设为一个负值（如tabIndex="-1"），
             那么这个链接将被排除在TAB键的序列之外。 -->
@@ -968,6 +968,36 @@
         </div>
     </div>
     <!-- 注册modal结束 -->    
+
+    <!-- 重置密码modal开始 -->
+    <div class="modal fade" id="forget_password" tabindex="-1" role="dialog"  aria-hidden="true">
+        <div class="modal-dialog"><!-- /.modal 设置宽度大小-->
+            <div class="modal-content"><!-- /.modal-content设置样式 -->
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title" id="myModalLabel">重置密码</h4>
+                </div>
+                <div class="modal-body text-center">
+                    <input type="text" required="required" placeholder="邮箱"  />
+                    <!-- required 属性规定必需在提交之前填写输入字段。-->
+                    <div id="errorAccount"></div>
+                    <input type="password" required="required" placeholder="密码" />
+                    <input type="password" required="required" placeholder="确认密码" />
+                    <div>
+                    <input type="text" required="required" placeholder="验证码" class="vcode"/>
+                    <input type="button" class="btn btn-default" id="get_verify_code_btn" value="发送验证码" />
+                    </div>
+                </div>
+                <div id="error_box" style="text-align: center;"><br></div>
+                <div class="modal-footer">
+                    <input type="button" class="btn btn-default"  value="重置">
+                    <!-- data-dismiss="modal" 点击会关闭-->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 重置密码modal结束 -->
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/file.js"></script>
