@@ -392,6 +392,17 @@
     color: #504A4D;
 }
 
+.second_content_left button {
+    float: right;
+    margin-top: 18px;
+}
+
+.second_content_right button {
+    position: relative;
+    left: 20px;
+    top: 8px;
+}
+
 .third_content {
     border-top: 2px solid #e4ecf3;
     height: 235px;
