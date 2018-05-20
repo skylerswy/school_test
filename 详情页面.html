@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" >
+    <link rel="stylesheet" href="css/head.css" >
+    <link rel="stylesheet" href="css/详情.css" >
+</head>
+<body>
+    <div class="nav_head">
+        <!-- <input type="button" class="btn btn-link" data-toggle="modal" data-target="#login_modal" name="logoin" value="登陆">
+        <input type="button" class="btn btn-link" data-toggle="modal" data-target="#register_modal" name="register" value="注册" > -->
+        <div class="nav dropdown">
+            <button type="button" class="btn btn-link dropdown-toggle" id="dropdown_contact" data-toggle="dropdown">联系客服
+                <span class="caret"></span>
+            </button>
+            <!-- class="dropdown-toggle"的作用是按钮右侧的圆角。去掉dropdown-toggle，你会发现UL的右侧变成了直角. -->
+            <ul class="dropdown-menu" role="menu" aria-labelledby="dropdown_contact">
+                <!-- class="dropdown-menu" 创建下拉菜单 -->
+                <li role="presentation">
+                    <a role="menuitem" tabindex="-1" href="#">消费者客服</a>
+                </li>
+                <!-- tabIndex属性可以设置键盘中的TAB键在控件中的移动顺序,即焦点的顺序。   -->
+                <li role="presentation">
+                    <a role="menuitem" tabindex="-1" href="#">卖家客服</a>
+                </li>
+            </ul>
+        </div>
+        <div class="nav dropdown">
+            <button type="button" class="btn btn-link dropdown-toggle" id="dropdown_center" data-toggle="dropdown" onclick="javascrtpt:window.location.href='用户中心.html'">| 用户中心
+            </button>
+                <!-- <ul class="dropdown-menu" role="menu" aria-labelledby="dropdown_contact">
+                <li role="presentation">
+                    <a role="menuitem" tabindex="-1" href="#">已卖出的宝贝</a>
+                </li>
+                <li role="presentation">
+                    <a role="menuitem" tabindex="-1" href="#">出售中的宝贝</a>
+                </li>
+                <li role="presentation">
+                    <a role="menuitem" tabindex="-1" href="#">下单中的宝贝</a>
+                </li>
+                <li role="presentation" class="divider"></li>
+                <li role="presentation">
+                    <a role="menuitem" tabindex="-1" href="#">我的消息</a>
+                </li>
+            </ul> -->
+        </div>
+        <div class="nav dropdown">
+            <button type="button" class="btn btn-link dropdown-toggle" id="dropdown_collection" data-toggle="dropdown">
+                <span class="glyphicon glyphicon-heart-empty"></span> 收藏<span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu" role="menu" aria-labelledby="dropdown_contact">
+                <li role="presentation">
+                    <a role="menuitem" tabindex="-1" href="#">收藏的宝贝</a>
+                </li>
+                <li role="presentation">
+                    <a role="menuitem" tabindex="-1" href="#">收藏的店铺</a>
+                </li>
+            </ul>
+        </div>
+        <div class="nav">
+            <button type="button" class="btn btn-link" id="dropdown_cart">
+                <span class="glyphicon glyphicon-shopping-cart"></span> 购物车
+            </button>
+        </div>
+        <div class="nav">
+            <button type="button" class="btn btn-link" id="dropdown_home_page" onclick="javascrtpt:window.location.href='index.html'">
+               首页
+            </button>
+        </div>
+    </div>
+    <div class="title">
+        <img src="img/title.png">
+        <div class="second_title">
+            <a href="index.html" class="active">首页</a>
+            <a href="#" >最新二手</a>
+            <a href="#" >拍卖市场</a>
+            <a href="#" >免费估价</a>
+            |
+            <a href="发布闲置.html" >发布闲置</a>
+            <a href="发布记录.html" >我的闲置</a>
+        </div>      
+    </div>
+    <div class="details">
+        <p class="details_title">详情标题</p>
+        <hr style="height : 10px"/>
+        <div class="attribute">
+            <p>属性名称：<span>属性值</span></p>
+            <p>属性名称：<span>属性值</span></p>
+            <p>属性名称：<span>属性值</span></p>
+            <p>属性名称：<span>属性值</span></p>
+            <p>属性名称：<span>属性值</span></p>
+            <p>属性名称：<span>属性值</span></p>
+            <p>属性名称：<span>属性值</span></p>
+            <p>属性名称：<span>属性值</span></p>
+        </div>
+        <div class="img_goods">
+            <img src="file:///C:/Users/swy/Desktop/xyeh/images/%E8%AF%A6%E6%83%85/u306.png"/>
+            <img src="file:///C:/Users/swy/Desktop/xyeh/images/%E8%AF%A6%E6%83%85/u306.png"/>
+            <img src="file:///C:/Users/swy/Desktop/xyeh/images/%E8%AF%A6%E6%83%85/u306.png"/>
+            <img src="file:///C:/Users/swy/Desktop/xyeh/images/%E8%AF%A6%E6%83%85/u306.png"/>
+        </div>
+        <p class="details_title">详情描述</p>
+        <hr/>
+        <div class="attribute_goods">
+
+        </div>
+
+    </div>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/?.js"></script>
+</body>
+</html>
