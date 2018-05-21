@@ -8,6 +8,12 @@
     width: 1200px;
 }
 
+.nav_head p {
+    display: inline;
+    margin-right: 15px;
+}
+
+
 /* ----------------------modal---------------------- */
 .modal-body>input {
     display: block;
@@ -187,8 +193,7 @@
 
 /* ---------------------find--------------------- */
 .find {
-    margin: 0 auto;
-    width: 540px;
+    width: 640px;
     height: 80px;
 }
 
@@ -202,7 +207,17 @@
 .find button {
     display: inline-block;
     width: 100px;
+    height: 35px;
 }
+
+.find a {
+    color: white;
+    position: relative;
+    top: -10px;
+    left: -12px;
+}
+
+
 
 /* -------------------sell------------------ */
 .sell_one {
@@ -392,12 +407,12 @@
     color: #504A4D;
 }
 
-.second_content_left button {
+.second_content_left .more_goods {
     float: right;
-    margin-top: 18px;
+    margin-top: 5px;
 }
 
-.second_content_right button {
+.second_content_right .more_goods {
     position: relative;
     left: 20px;
     top: 8px;
@@ -610,4 +625,34 @@
 
 address {
     margin-left: 70%;
+}
+
+/* ---------------------new_nav--------------------- */
+.new_nav {
+    width: 1200px;
+    height: 100px;
+    border: 2px solid #e4ecf3;
+    box-shadow: 1px 2px 3px #f2f6f8;
+    border-radius: 5px;
+    margin-left: 10%;
+    margin-top: 50px;
+    margin-bottom: 60px;
+    padding-left: 20px;
+}
+
+.new_nav_in img {
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+}
+
+.new_nav_in a {
+    display: inline-block;
+    position: relative;
+    left: -10px;
+}
+
+.new_nav_in {
+    float: left;
+    margin: 20px 30px 0 30px;
 }
