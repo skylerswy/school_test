@@ -210,7 +210,18 @@
     height: 35px;
 }
 
-.find a {
+.find>a {
+    width: 60px;
+    height: 35px;
+}
+
+.find span {
+    position: relative;
+    top: -4px;
+}
+
+
+.find>button>a {
     color: white;
     position: relative;
     top: -10px;
@@ -609,18 +620,6 @@
     left: 480px;
     top: -140px;
     color: #504A4D;
-}
-
-.ios {
-    position: relative;
-    top: -200px;
-    left: 520px;
-}
-
-.android {
-    position: relative;
-    top: -120px;
-    left: 125px;
 }
 
 address {

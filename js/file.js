@@ -1,14 +1,14 @@
 // -----------------find----------------
-$("#search-button").click(function() {
-    var val = $("#search").val(); // 获取搜索词
-    if (val.length > 0) {
-        console.log(val);
-        $(".nav-1").hide(); 
-        $(".nav-1:contains(" + val + ")").show(); 
-    } else {
-        alert("输入为空");
-    }
-});
+// $("#search-button").click(function() {
+//     var val = $("#search").val(); // 获取搜索词
+//     if (val.length > 0) {
+//         console.log(val);
+//         $(".nav-1").hide(); 
+//         $(".nav-1:contains(" + val + ")").show(); 
+//     } else {
+//         alert("输入为空");
+//     }
+// });
 
 // // --------------登录注册------------------
 // // API host
