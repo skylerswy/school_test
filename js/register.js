@@ -1,9 +1,10 @@
 $(function(){
 
     $("#register_btn").click(function(){
-
         $.ajax({
             type: "post",
+            // type 和method 一样的含义 只是mthod是version1.9添加的，
+            // 所以版本1.9之前的使用type  之后的使用method
             url: "",
             data: {
                 email: $("#register_email").val(),
@@ -14,7 +15,18 @@ $(function(){
         }).done(function(){
             window.location.href="logon.html";
         });
+    });
 
+    $("#register_get_vcode").click(function(){
+        $.ajax({
+            type: "post",
+            url: "",
+            data: {
+                email: $("#register_email").val()
+            }
+        }).done(function(response){
+            console.log(response);
+        });
     });
 
 });
